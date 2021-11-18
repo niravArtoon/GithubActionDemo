@@ -112,7 +112,6 @@
 			);
 			mainGroup = 4AAF5A1F27467BF300A84378;
 			packageReferences = (
-				4A7C88F72746894D00846813 /* XCRemoteSwiftPackageReference "GithubActionDemo" */,
 			);
 			productRefGroup = 4AAF5A2927467BF300A84378 /* Products */;
 			projectDirPath = "";
@@ -361,17 +360,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		4A7C88F72746894D00846813 /* XCRemoteSwiftPackageReference "GithubActionDemo" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Savanbeladiya/GithubActionDemo";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 4AAF5A2027467BF300A84378 /* Project object */;
 }
