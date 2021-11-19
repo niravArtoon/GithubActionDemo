@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "GithubActionDemo",
+        "repositoryURL": "https://github.com/Savanbeladiya/GithubActionDemo",
+        "state": {
+          "branch": "main",
+          "revision": "8e663171f546559ac8553b2c43fec9cc06b9d3e3",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
