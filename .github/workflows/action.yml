@@ -1,4 +1,4 @@
-name: Swift
+# name: Swift
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
 jobs:
   build:
 
-    runs-on: macos-latest
+#     runs-on: macos-latest
 
 #     steps:
 #     - uses: actions/checkout@v2
@@ -23,4 +23,36 @@ jobs:
 #       run: "sudo xcode-select -s /Applications/Xcode_$XC_VERSION.app"
     - uses: actions/checkout@v2
     - name: Run Unit and UI Tests
-      run: /usr/bin/xcodebuild test -workspace "$XC_WORKSPACE" -scheme "$XC_SCHEME" -destination 'platform=iOS Simulator,name=iPhone 13'
+      run: /Users/savan.beladiya/Desktop/GithubActionDemo test -workspace "$XC_WORKSPACE" -scheme "$XC_SCHEME" -destination 'platform=iOS Simulator,name=iPhone 13'
+
+#     name: Build and Test default scheme using iPhone/iPad simulator
+#     runs-on: macos-latest
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v2
+#       - name: Force Xcode 11
+#         run: sudo xcode-select -switch /Applications/Xcode_11.7.app
+#       - name: iOS build setup
+#         run: >-
+#           xcodebuild test -workspace TestApp.xcodeproj/project.xcworkspace
+#           -scheme TestApp -destination 'platform=iOS Simulator,name=iPhone
+#           11,OS=13.7'
+#       - name: testing ... iPhone 11
+#         run: >-
+#           xcodebuild test -workspace TestApp.xcodeproj/project.xcworkspace
+#           -scheme TestApp -destination 'platform=iOS Simulator,name=iPhone
+#           11,OS=13.7'
+#       - name: testing ... iPhone 11 Pro Max
+#         run: >-
+#           xcodebuild test -workspace TestApp.xcodeproj/project.xcworkspace
+#           -scheme TestApp -destination 'platform=iOS Simulator,name=iPhone 11
+#           Pro Max,OS=13.7'
+#       - name: testing ... iPad Air
+#         run: >-
+#           xcodebuild test -workspace TestApp.xcodeproj/project.xcworkspace
+#           -scheme TestApp -destination 'platform=iOS Simulator,name=iPad Air
+#           (3rd generation),OS=13.7'
+#       - name: testing ... iPad Pro 12.9
+#         run: >-
+#           xcodebuild test -workspace TestApp.xcodeproj/project.xcworkspace
+#           -scheme TestApp -destination 'platform=iOS Simulator,name=iPad Pro (12.9-inch) (4th generation),OS=13.7'
