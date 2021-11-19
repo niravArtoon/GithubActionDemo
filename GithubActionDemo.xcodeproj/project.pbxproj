@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4AAA77FC274769E500BAD54B /* GithubActionDemo in Frameworks */ = {isa = PBXBuildFile; productRef = 4AAA77FB274769E500BAD54B /* GithubActionDemo */; };
 		4AAF5A2C27467BF300A84378 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAF5A2B27467BF300A84378 /* AppDelegate.swift */; };
 		4AAF5A2E27467BF300A84378 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAF5A2D27467BF300A84378 /* SceneDelegate.swift */; };
 		4AAF5A3027467BF300A84378 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAF5A2F27467BF300A84378 /* ViewController.swift */; };
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AAA77FC274769E500BAD54B /* GithubActionDemo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = GithubActionDemo;
+			packageProductDependencies = (
+				4AAA77FB274769E500BAD54B /* GithubActionDemo */,
+			);
 			productName = GithubActionDemo;
 			productReference = 4AAF5A2827467BF300A84378 /* GithubActionDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +117,7 @@
 			);
 			mainGroup = 4AAF5A1F27467BF300A84378;
 			packageReferences = (
+				4AAA77FA274769E500BAD54B /* XCRemoteSwiftPackageReference "GithubActionDemo" */,
 			);
 			productRefGroup = 4AAF5A2927467BF300A84378 /* Products */;
 			projectDirPath = "";
@@ -360,6 +366,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4AAA77FA274769E500BAD54B /* XCRemoteSwiftPackageReference "GithubActionDemo" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Savanbeladiya/GithubActionDemo";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4AAA77FB274769E500BAD54B /* GithubActionDemo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4AAA77FA274769E500BAD54B /* XCRemoteSwiftPackageReference "GithubActionDemo" */;
+			productName = GithubActionDemo;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4AAF5A2027467BF300A84378 /* Project object */;
 }
