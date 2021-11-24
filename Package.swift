@@ -14,7 +14,7 @@ let package = Package(
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
-         .package(url: "http://github.com/Savanbeladiya/GithubActionDemo", .branch("main")),
+         .package(url: "http://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@github.com/Savanbeladiya/GithubActionDemo", .branch("main")),
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
