@@ -4,12 +4,12 @@
 import PackageDescription
 
 let package = Package(
-    name: "GithubActionDemo",
+//     name: "GithubActionDemo",
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-//             name: "GithubActionDemo",
-//             targets: ["GithubActionDemo"]),
+            name: "GithubActionDemo",
+            targets: ["GithubActionDemo"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
