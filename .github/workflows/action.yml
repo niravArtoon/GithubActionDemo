@@ -23,11 +23,11 @@ jobs:
 #       run: "sudo xcode-select -s /Applications/Xcode_$XC_VERSION.app"
     - uses: actions/checkout@v2
     
-    - name: Build
-      run: swift build -v
+#     - name: Build
+#       run: swift build -v
       
-    - name: Run tests
-      run: swift test -v 
+#     - name: Run tests
+#       run: swift test -v 
 
 #     - run: for ip in $(dig @8.8.8.8 github.com +short); do ssh-keyscan github.com,$ip; ssh-keyscan $ip; done 2>/dev/null >> ~/.ssh/known_hosts
 
