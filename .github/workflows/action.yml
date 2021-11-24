@@ -26,8 +26,9 @@ jobs:
 #     - name: Build
 #       run: swift build -v
       
-#     - name: Run tests
-#       run: swift test -v 
+    - name: Run tests
+      run: swift test -v 
+
 #     - run: for ip in $(dig @8.8.8.8 github.com +short); do ssh-keyscan github.com,$ip; ssh-keyscan $ip; done 2>/dev/null >> ~/.ssh/known_hosts
 
     - name: Run Unit and UI Tests
