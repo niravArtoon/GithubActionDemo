@@ -50,7 +50,6 @@
 				9BE7D1E41AFC4DF3FBC8C915 /* Pods-GithubActionDemo.debug.xcconfig */,
 				FAFA1EEA9BB367A40FF88648 /* Pods-GithubActionDemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
