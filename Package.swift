@@ -21,8 +21,8 @@ let package = Package(
         .target(
             name: "GithubActionDemo",
             dependencies: ["GithubActionDemo"]),
-        .testTarget(
-            name: "GithubActionDemoTests",
-            dependencies: ["GithubActionDemo"]),
+//         .testTarget(
+//             name: "GithubActionDemoTests",
+//             dependencies: ["GithubActionDemo"]),
     ]
 )
