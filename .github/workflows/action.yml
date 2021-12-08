@@ -31,11 +31,11 @@ jobs:
 
 #     - run: for ip in $(dig @8.8.8.8 github.com +short); do ssh-keyscan github.com,$ip; ssh-keyscan $ip; done 2>/dev/null >> ~/.ssh/known_hosts
 
-    - name: Run Unit and UI Tests
-#       run: /Users/savan.beladiya/Desktop/GithubActionDemo test -workspace "$XC_WORKSPACE" -scheme "$XC_SCHEME" -destination 'platform=iOS Simulator,name=iPhone 13'
-      run: xcodebuild test -workspace GithubActionDemo.xcodeproj/project.xcworkspace
-          -scheme GithubActionDemo -destination 'platform=iOS Simulator,name=iPhone 11
-          Pro Max'
+#     - name: Run Unit and UI Tests
+# #       run: /Users/savan.beladiya/Desktop/GithubActionDemo test -workspace "$XC_WORKSPACE" -scheme "$XC_SCHEME" -destination 'platform=iOS Simulator,name=iPhone 13'
+#       run: xcodebuild test -workspace GithubActionDemo.xcodeproj/project.xcworkspace
+#           -scheme GithubActionDemo -destination 'platform=iOS Simulator,name=iPhone 11
+#           Pro Max'
     - name: Test
       run: |
         xcodebuild test -project Proj.xcodeproj -scheme ProjTests -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 11,OS=15"
